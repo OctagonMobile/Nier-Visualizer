@@ -29,7 +29,7 @@ class KeyFrameMaker {
     }
 
     fun updateWaveData(waveData: ByteArray) {
-        if(this::mDestWaveData.isInitialized){
+        if(this.mDestWaveData.isInitialized){
             System.arraycopy(waveData, 0, mDestWaveData, 0, mDestWaveData.size) 
             System.arraycopy(computedWaveData, 0, mPrevWaveData, 0, mPrevWaveData.size)
     //        System.arraycopy(waveData, 0, computedWaveData, 0, computedWaveData.size)
